@@ -1,0 +1,330 @@
+
+/*
+public class pattren{
+    public static void main(String[] args){
+        for(int i=1;i<=4;i++){
+            for(int j=0;j<4;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+    }
+}
+
+
+public class pattren{
+    public static void main(String[] args){
+        int n=5;
+        int m=6;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=m;j++)
+            {
+                if(i==1 || j==1 || j==m||i==n ){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+               
+            }
+            System.out.println("");
+        }
+    }
+}
+     
+
+
+public class star{
+    public static void main(String[] args){
+        for(int i =1;i<=5;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+           System.out.println();
+        }
+    }
+}
+
+output==
+
+*
+**
+***
+****
+*****
+
+ 
+
+
+
+ public class star{
+    public static void main(String[] args){
+        for(int i =5;i>=1;i--)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print("*");
+            }
+           System.out.println();
+        }
+    }
+}
+
+*****
+****
+***
+**
+*
+
+
+
+
+public class star
+{
+    public static void main(String[] args)
+    {
+        int n=5;
+        for(int i =1;i<=n;i++)
+        {
+            for(int j=1;j<=n-i;j++)
+            {
+                System.out.print(" ");
+            }    
+            for (int j=1;j<=i;j++)
+            {
+                System.out.print("*");
+            }
+             System.out.println();
+        }
+    }
+}
+
+output =
+
+
+    *
+   **
+  ***
+ ****
+*****
+
+
+
+     
+
+
+public class star{
+    public static void main(String[] args){
+        for(int i =1;i<=5;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(j);
+            }
+           System.out.println();
+        }
+    }
+}
+
+output =
+
+1
+12
+123
+1234
+
+
+
+public class star{
+    public static void main(String[] args){
+        int n=5;
+        for(int i =0;i<=5;i++){
+            for(int j=1;j<=n-i;j++){
+                System.out.print(j);
+            }
+           System.out.println();
+        }
+    }
+}
+
+output =
+
+12345
+1234
+123
+12
+1
+
+12345
+
+
+public class star{
+    public static void main(String[] args){
+        int count=1;
+        for(int i =1;i<=5;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(count+ " ");
+                count+=1;
+            }
+           System.out.println();
+        }
+    }
+}
+
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+
+
+public class star{
+    public static void main(String[] args){
+        for(int i =1;i<=5;i++){
+            for(int j=1;j<=i;j++){
+                if(j%2==0){
+                    System.out.print(0);
+                }
+
+            else{
+                System.out.print(1);
+            }
+            }
+           System.out.println();
+        }
+    }
+}
+
+output =
+
+1
+10
+101
+1010
+10101
+
+
+
+
+public class Solutions {
+    public static void main(String args[]) {
+        int n = 4;
+ 
+ 
+        //upper part
+        for(int i=1; i<=n; i++) {
+            for(int j=1; j<=i; j++) {
+                System.out.print("*");
+            }
+ 
+ 
+            int spaces = 2 * (n-i);
+            for(int j=1; j<=spaces; j++) {
+                System.out.print(" ");
+            }
+ 
+ 
+            for(int j=1; j<=i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i=n; i>=1; i--) {
+            for(int j=1; j<=i; j++) {
+                System.out.print("*");
+            }
+ 
+ 
+            int spaces = 2 * (n-i);
+            for(int j=1; j<=spaces; j++) {
+                System.out.print(" ");
+            }
+ 
+ 
+            for(int j=1; j<=i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }   
+ }
+ 
+ output ==
+
+*      *
+**    **
+***  ***
+********
+********
+***  ***
+**    **
+*      *
+
+
+
+
+
+public class Solutions {
+    public static void main(String args[]) {
+        int n = 5;
+        for(int i=1; i<=n; i++) {
+            //spaces
+            for(int j=1; j<=n-i; j++) {
+                System.out.print(" ");
+            }
+ 
+ 
+            //stars
+            for(int j=1; j<=n; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }   
+ }
+  
+ output=
+
+     *****
+    *****
+   *****
+  *****
+ *****
+
+
+
+ public class Solutions {
+    public static void main(String args[]) {
+        int n = 5;
+        for(int i=1; i<=n; i++) {
+            //spaces
+            for(int j=1; j<=n-i; j++) {
+                System.out.print(" ");
+            }
+ 
+ 
+            //first part
+            for(int j=i; j>=1; j--) {
+                System.out.print(j);
+            }
+ 
+ 
+            //second part
+            for(int j=2; j<=i; j++) {
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }   
+ }
+ 
+
+ output =
+
+    1
+   212
+  32123
+ 4321234
+543212345
+
+
+ */

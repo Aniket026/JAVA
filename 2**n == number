@@ -1,0 +1,38 @@
+public class Twopower {
+
+
+    public boolean check1(int number){
+
+        if(number<0){
+            return false;
+
+        }
+       else if(number==1){
+        return true;
+
+       }
+       while(number%2==0){
+        number=number/2;
+       }
+       if(number==1){
+        return true;
+       }
+       else {
+        return false;
+       }
+
+    } 
+
+
+    public static void main(String[] args) {
+        Twopower tq= new Twopower();
+        boolean re=tq.check1(16);
+        if(re){
+            System.out.println("yes");
+        }
+        else{
+            System.out.println("no");
+        }
+    }
+    
+}

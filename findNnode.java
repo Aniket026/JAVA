@@ -17,9 +17,9 @@ int input=sc.nextInt();
 for(int i=0;i<list.size();i++)
 {
     if(input==i){
-         System.out.println(list[i]);
+         System.out.println();
     }}
-
+    
 for(int j=0;j<list.size();j++)
 {
      System.out.print(list.get(j)+"->");

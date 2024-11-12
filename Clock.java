@@ -1,4 +1,4 @@
-import java.util.*; 
+ import java.util.*; 
 public class Clock {
 
     public int find_time(int first,int second){

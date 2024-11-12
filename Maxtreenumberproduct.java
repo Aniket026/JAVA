@@ -3,7 +3,7 @@ import java.util.*;
 public class Maxtreenumberproduct 
 {
 public int maxproduct(int[] arr)              
-{ 
+{  
     int max=-1;
     int smax=-1;
     int tmax=-1;
